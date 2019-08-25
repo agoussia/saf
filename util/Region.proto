@@ -15,10 +15,9 @@ syntax = "proto3";
 package saf.util;
 option go_package = "gosaf/saf/util";
 
-message Address {
-    string street = 1;
-    string city = 2;
-    string state = 3;
-    string zip = 4;
-    bool isShippingAddress = 5; 
+message Region {
+    string country=1;
+    string province=2;
+    string city=3;
+
   }

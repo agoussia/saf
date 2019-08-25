@@ -7,4 +7,4 @@ export PATH=$PATH:$GOPATH/bi
 protoc  saf/util/Header.proto  -I. --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Ack.proto  -I. --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Address.proto  -I. --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trucking/load/RequestForTransport.proto  -I. --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/registry/Registration.proto  -I. --go_out=plugins=grpc:$GOPATH/src

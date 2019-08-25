@@ -12,13 +12,26 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.util;
-option go_package = "gosaf/saf/util";
+package saf.tcr;
+import "saf/util/Address.proto";
+import "saf/util/Region.proto";
 
-message Address {
-    string street = 1;
-    string city = 2;
-    string state = 3;
-    string zip = 4;
-    bool isShippingAddress = 5; 
-  }
+option go_package = "gosaf/saf/tcr";
+
+message RegistrationRequest {
+  string saf_id=1;
+  string companyName=2;
+  saf.util.Address  address=3;
+  saf.util.Region region=4;
+  bool mode_sf_fcl=5;
+  bool mode_sf_lcl=6;
+  bool mode_sf_gc=7;
+  bool mode_sf_bulk=8;
+  bool mode_air=9;
+  bool mode_land_truck=10;
+  bool mode_land_rail=11;
+  bool multi_modal=12;
+  bool domestic=13;
+  string communication_end_point=14;
+  
+}

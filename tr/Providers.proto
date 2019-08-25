@@ -11,14 +11,14 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-syntax = "proto3";
-package saf.util;
-option go_package = "gosaf/saf/util";
 
-message Address {
-    string street = 1;
-    string city = 2;
-    string state = 3;
-    string zip = 4;
-    bool isShippingAddress = 5; 
-  }
+syntax = "proto3";
+package saf.tr;
+
+import "saf/util/Partner.proto";
+option go_package = "gosaf/saf/tr";
+
+message Providers{       
+        repeated saf.util.Partner partner=1;
+        
+}

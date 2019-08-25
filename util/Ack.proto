@@ -13,11 +13,8 @@
 // limitations under the License.
 
 syntax = "proto3";
-
 package saf.util;
-
-
-option go_package = "github.com/gl/gosaf/saf/util";
+option go_package = "gosaf/saf/util";
 
 
 message Ack {

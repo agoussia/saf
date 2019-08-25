@@ -1,0 +1,47 @@
+// Copyright 2018 Sea-Freight Automation Framework Foundation.
+//  http://www.saf-project.org/
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+package saf.tr;
+
+option go_package = "gosaf/saf/tr";
+
+import "saf/loads/AirFreight.proto";
+import "saf/loads/Domestic.proto";
+import "saf/loads/LandRail.proto";
+import "saf/loads/LandTruck.proto";
+import "saf/loads/MultiModal.proto";
+import "saf/loads/SeaBulk.proto";
+import "saf/loads/SeaFcl.proto";
+import "saf/loads/SeaGc.proto";
+import "saf/loads/SeaLcl.proto";
+import "saf/loads/SeaRoro.proto";
+
+
+
+
+message Load{       
+        string transportation_mode=1;
+        saf.loads.SeaFcl sea_fcl=2;
+        saf.loads.SeaLcl sea_lcl=3;
+        saf.loads.SeaGc sea_gc=4;
+        saf.loads.SeaBulk sea_bulk=5;
+        saf.loads.SeaRoro sea_roro=6;
+        saf.loads.AirFreight airfreight=7;
+        saf.loads.LandTruck land_truck=8;
+        saf.loads.LandRail land_rail=9;
+        saf.loads.MultiModal multimodal=10;
+        saf.loads.Domestic    domestic=11;
+
+}

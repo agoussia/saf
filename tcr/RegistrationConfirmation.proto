@@ -11,21 +11,12 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 syntax = "proto3";
-package saf.trucking.load;
-import "saf/util/Header.proto";
-import "saf/util/Address.proto";
-option go_package = "github.com/gl/gosaf/saf/trucking/load";
+package saf.tcr;
 
-message RequestForTransport{       
-        saf.util.Header  header=1;
-        string type=2;  
-        string container_id=3;
-        float weight=4;
-        string cargo_desription=5;
-        saf.util.Address  from=6;
-        saf.util.Address  to=7;
-        string pickup_date=8; 
-        
+
+option go_package = "gosaf/saf/tcr";
+
+message RegistrationConfirmation {
+  string saf_id=1;
 }

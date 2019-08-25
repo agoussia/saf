@@ -1,0 +1,32 @@
+
+REM TO USE MOVE IT TO PARENT DIRECTORY
+
+@echo off
+rem util
+protoc  saf/util/Ack.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/util/Address.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/util/Header.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/util/Region.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/util/Partner.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+
+rem loads
+protoc  saf/loads/AirFreight.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/Domestic.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/LandRail.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/MultiModal.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/SeaBulk.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/SeaFcl.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/SeaGc.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/SeaLcl.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/loads/SeaRoro.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+
+rem tcr
+protoc  saf/tcr/RegistrationConfirmation.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/tcr/RegistrationRequest.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/tcr/RegistrationResponse.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/tcr/RegistrationService.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+
+rem tr
+protoc  saf/tr/Load.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/tr/Providers.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"
+protoc  saf/tr/ProviderService.proto  -I. --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src\github.com"

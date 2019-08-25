@@ -12,13 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.util;
-option go_package = "gosaf/saf/util";
+package saf.tcr;
 
-message Address {
-    string street = 1;
-    string city = 2;
-    string state = 3;
-    string zip = 4;
-    bool isShippingAddress = 5; 
-  }
+option go_package = "gosaf/saf/tcr";
+
+message RegistrationResponse {
+  string saf_id=1;
+}
