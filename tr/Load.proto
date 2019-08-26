@@ -17,31 +17,31 @@ package saf.tr;
 
 option go_package = "gosaf/saf/tr";
 
-import "saf/loads/AirFreight.proto";
-import "saf/loads/Domestic.proto";
-import "saf/loads/LandRail.proto";
-import "saf/loads/LandTruck.proto";
-import "saf/loads/MultiModal.proto";
-import "saf/loads/SeaBulk.proto";
-import "saf/loads/SeaFcl.proto";
-import "saf/loads/SeaGc.proto";
-import "saf/loads/SeaLcl.proto";
-import "saf/loads/SeaRoro.proto";
+import "saf/tr/loads/AirFreight.proto";
+import "saf/tr/loads/Domestic.proto";
+import "saf/tr/loads/LandRail.proto";
+import "saf/tr/loads/LandTruck.proto";
+import "saf/tr/loads/MultiModal.proto";
+import "saf/tr/loads/SeaBulk.proto";
+import "saf/tr/loads/SeaFcl.proto";
+import "saf/tr/loads/SeaGc.proto";
+import "saf/tr/loads/SeaLcl.proto";
+import "saf/tr/loads/SeaRoro.proto";
 
 
 
 
 message Load{       
         string transportation_mode=1;
-        saf.loads.SeaFcl sea_fcl=2;
-        saf.loads.SeaLcl sea_lcl=3;
-        saf.loads.SeaGc sea_gc=4;
-        saf.loads.SeaBulk sea_bulk=5;
-        saf.loads.SeaRoro sea_roro=6;
-        saf.loads.AirFreight airfreight=7;
-        saf.loads.LandTruck land_truck=8;
-        saf.loads.LandRail land_rail=9;
-        saf.loads.MultiModal multimodal=10;
-        saf.loads.Domestic    domestic=11;
+        saf.tr.loads.SeaFcl sea_fcl=2;
+        saf.tr.loads.SeaLcl sea_lcl=3;
+        saf.tr.loads.SeaGc sea_gc=4;
+        saf.tr.loads.SeaBulk sea_bulk=5;
+        saf.tr.loads.SeaRoro sea_roro=6;
+        saf.tr.loads.AirFreight airfreight=7;
+        saf.tr.loads.LandTruck land_truck=8;
+        saf.tr.loads.LandRail land_rail=9;
+        saf.tr.loads.MultiModal multimodal=10;
+        saf.tr.loads.Domestic    domestic=11;
 
 }
