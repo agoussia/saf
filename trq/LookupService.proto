@@ -11,16 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 syntax = "proto3";
-package saf.tr;
-//import "saf/util/Money.proto";
-option go_package = "gosaf/saf/tr";
+package saf.trq;
+import "saf/trq/Load.proto";
+import "saf/util/Partners.proto";
 
+option go_package = "gosaf/saf/trq";
 
-message Quotation{       
-       
-   // saf.util.Money money=1;
-   string money=1;
-        
+service  LookupService {
+    rpc Get(Load)   returns (saf.util.Partners);
 }

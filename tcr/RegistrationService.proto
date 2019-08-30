@@ -22,6 +22,8 @@ import "saf/util/Ack.proto";
 option go_package = "gosaf/saf/tcr";
 
 service  RegistrationService {
-    rpc Register(RegistrationRequest)   returns (RegistrationResponse);
+    rpc Create(RegistrationRequest)   returns (RegistrationResponse);
     rpc Confirm (RegistrationConfirmation) returns (saf.util.Ack) ;
+    rpc Update (RegistrationRequest) returns (saf.util.Ack) ;
+
 }

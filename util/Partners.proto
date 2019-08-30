@@ -12,9 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.tr.loads;
-option go_package = "gosaf/saf/tr/loads";
+package saf.util;
 
-message AirFreight {
-    string container_id=1;
+import "saf/util/Partner.proto";
+
+option go_package = "gosaf/saf/util";
+
+message Partners {
+   repeated Partner  match_partners=1;
+  
   }

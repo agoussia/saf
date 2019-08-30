@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.tr.loads;
-option go_package = "gosaf/saf/tr/loads";
+package saf.trq.loads;
+option go_package = "gosaf/saf/trq/loads";
 
-message LandRail {
+message LandTruck {
     string container_id=1;
   }

@@ -17,5 +17,7 @@ package saf.tcr;
 option go_package = "gosaf/saf/tcr";
 
 message RegistrationResponse {
-  string saf_id=1;
+  int32 retCode=1;
+	string errorMessage = 2;
+  string saf_id=3;
 }
