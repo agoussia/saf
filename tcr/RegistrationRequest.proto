@@ -20,7 +20,7 @@ option go_package = "gosaf/saf/tcr";
 
 message RegistrationRequest {
   string saf_id=1;
-  string companyName=2;
+  string company_name=2;
   saf.util.Address  address=3;
   saf.util.Region region=4;
   bool mode_sf_fcl=5;
@@ -32,6 +32,7 @@ message RegistrationRequest {
   bool mode_land_rail=11;
   bool multi_modal=12;
   bool domestic=13;
-  string communication_end_point=14;
+  bool storage=14;
+  string communication_end_point=15;
   
 }
