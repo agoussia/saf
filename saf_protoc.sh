@@ -33,3 +33,5 @@ protoc  saf/trq/Load.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+## rem health
+protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
