@@ -35,3 +35,5 @@ protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 ## rem health
 protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+## rem trucking
+protoc  saf/trucking/load/RequestForTransport.proto  -I../ --go_out=plugins=grpc:$GOPATH/src

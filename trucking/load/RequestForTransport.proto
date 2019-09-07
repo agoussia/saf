@@ -11,35 +11,21 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 syntax = "proto3";
-package saf.tcr;
+package saf.trucking.load;
+import "saf/util/Header.proto";
 import "saf/util/Address.proto";
+option go_package = "gosaf/saf/trucking/load";
 
-
-option go_package = "gosaf/saf/tcr";
-
-message RegistrationRequest {
-  string saf_id=1;
-  bool requester=2;
-  string company_name=3;
-  saf.util.Address  address=4;
-  string url=5;
-  string designation=6;
-  string web=7;
-  string province=8;
-  string city=9;
-  string phone=10;
-  string  country=11;
-  bool mode_fcl=12;
-  bool mode_lcl=13;
-  bool mode_gc=14;
-  bool mode_bulk=15;
-  bool mode_roro=16;
-  bool mode_air=17;
-  bool mode_truck=18;
-  bool mode_rail=19;
-  bool mode_multi_modal=20;
-  bool mode_domestic=21;
-  bool storage=22;
-  
+message RequestForTransport{       
+        saf.util.Header  header=1;
+        string type=2;  
+        string container_id=3;
+        float weight=4;
+        string cargo_desription=5;
+        saf.util.Address  from=6;
+        saf.util.Address  to=7;
+        string pickup_date=8; 
+        
 }

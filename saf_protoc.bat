@@ -34,3 +34,6 @@ protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Al
 
 rem health
 protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+
+rem trucking
+protoc  saf/trucking/load/RequestForTransport.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
