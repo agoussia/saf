@@ -41,5 +41,16 @@ message RegistrationRequest {
   int32 quotation_multi_modal=20;
   int32 quotation_domestic=21;
   int32 quotation_storage=22;
+  bool fclRequester=23;
+  bool lclRequester=24;
+  bool  gcargoRequester=25;
+  bool  bulkRequester=26;
+  bool  roroRequester=27;
+  bool  airRequester=28;
+  bool   truckRequester=29;
+  bool  railRequester=30;
+  bool  mmodalRequester=31;
+  bool  domesticRequester=32;
+  bool  storageRequester=33;
   
 }
