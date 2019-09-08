@@ -26,20 +26,20 @@ message RegistrationRequest {
   string url=5;
   string designation=6;
   string web=7;
-  string province=8;
-  string city=9;
-  string phone=10;
-  string  country=11;
-  bool mode_fcl=12;
-  bool mode_lcl=13;
-  bool mode_gc=14;
-  bool mode_bulk=15;
-  bool mode_roro=16;
-  bool mode_air=17;
-  bool mode_truck=18;
-  bool mode_rail=19;
-  bool mode_multi_modal=20;
-  bool mode_domestic=21;
-  bool storage=22;
+  string  country=8;
+  string province=9;
+  string city=10;
+  string phone=11;
+  int32 quotation_fcl=12;
+  int32 quotation_lcl=13;
+  int32 quotation_gc=14;
+  int32 quotation_bulk=15;
+  int32 quotation_roro=16;
+  int32 quotation_air=17;
+  int32 quotation_truck=18;
+  int32 quotation_rail=19;
+  int32 quotation_multi_modal=20;
+  int32 quotation_domestic=21;
+  int32 quotation_storage=22;
   
 }
