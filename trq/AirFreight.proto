@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.trq.loads;
-option go_package = "gosaf/saf/trq/loads";
+package saf.trq;
+option go_package = "gosaf/saf/trq";
 
-message MultiModal {
+message AirFreight {
     string container_id=1;
   }
