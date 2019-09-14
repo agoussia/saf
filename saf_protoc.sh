@@ -28,6 +28,7 @@ protoc  saf/tcr/RegistrationConfirmation.proto  -I../ --go_out=plugins=grpc:$GOP
 protoc  saf/tcr/RegistrationRequest.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/tcr/RegistrationResponse.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/tcr/RegistrationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+
 ## rem trq
 protoc  saf/trq/RQuotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
