@@ -17,5 +17,6 @@ option go_package = "gosaf/saf/util";
 
 message Partner {
    string saf_id=1;
-   string end_point=2;
+   string company_name=2;
+   string end_point=3;
   }

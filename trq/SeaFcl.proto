@@ -16,8 +16,13 @@ package saf.trq;
 option go_package = "gosaf/saf/trq";
 
 message SeaFcl {
-    string from_city=1;
-    bool land_transport_export =2;
-    
-
-  }
+    string from_loc=1;
+    bool land_export =2;
+   string to_loc=3;
+   bool land_import=4;
+   string shipment_date_str=5;
+   string container_type=6;
+    string container_size=7;
+  int32 monthly_quantity=8;
+  string commodity_type=9;
+}
