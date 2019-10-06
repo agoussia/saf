@@ -16,8 +16,5 @@ syntax = "proto3";
 package saf.util;
 option go_package = "gosaf/saf/util";
 
-
-message Ack {
-    int32 retCode=1;
-	string errorMessage = 2;
+message Empty {  
 }

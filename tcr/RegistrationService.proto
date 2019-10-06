@@ -17,13 +17,13 @@ import "saf/tcr/RegistrationRequest.proto";
 import "saf/tcr/RegistrationResponse.proto";
 import "saf/tcr/RegistrationConfirmation.proto";
 
-import "saf/util/Ack.proto";
+import "saf/util/Empty.proto";
 
 option go_package = "gosaf/saf/tcr";
 
 service  RegistrationService {
     rpc Create(RegistrationRequest)   returns (RegistrationResponse);
-    rpc Confirm (RegistrationConfirmation) returns (saf.util.Ack) ;
-    rpc Update (RegistrationRequest) returns (saf.util.Ack) ;
+    rpc Confirm (RegistrationConfirmation) returns (saf.util.Empty) ;
+    rpc Update (RegistrationRequest) returns (saf.util.Empty) ;
 
 }

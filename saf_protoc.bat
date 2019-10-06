@@ -1,12 +1,12 @@
 @echo off
 rem util
-protoc  saf/util/Ack.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Address.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Header.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Region.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Partner.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Partners.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Money.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/util/Empty.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 rem loads
 protoc  saf/trq/AirFreight.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"

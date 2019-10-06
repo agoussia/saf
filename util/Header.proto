@@ -17,18 +17,23 @@ option go_package = "gosaf/saf/util";
 
 
 message Header {
-    
-    string engagement_id=1;
-    bytes engagement_uid=2;
-    bytes message_uid=3;
+
+  string engagement_uid=1;
+  string engagement_label=2;
+  string sender=3;
+  string receiver=4;
+
+    //string engagement_id=1;
+    //bytes engagement_uid=2;
+   // bytes message_uid=3;
     //---------------------
-    string  sender_id=4;        //email
-    string sender_saf_id=5;
-    string sent_at=6;           //JavaScript  "1975-08-19T23:15:30.000Z"
+   // string  sender_id=4;        //email
+   // string sender_saf_id=5;
+   // string sent_at=6;           //JavaScript  "1975-08-19T23:15:30.000Z"
       //---------------------
-    string receiver_id= 7;  //email
-    string receiver_saf_id=8;
-    string received_at=9;       //JavaScript  "1975-08-19T23:15:30.000Z"
-    string engagement_note=10;
+   // string receiver_id= 7;  //email
+   // string receiver_saf_id=8;
+   // string received_at=9;       //JavaScript  "1975-08-19T23:15:30.000Z"
+   // string engagement_note=10;
  
 }

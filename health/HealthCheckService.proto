@@ -14,13 +14,13 @@
 syntax = "proto3";
 package saf.health;
 
-import "saf/util/Ack.proto";
+import "saf/util/Empty.proto";
 //import "google/protobuf/any.proto";
 
 option go_package = "gosaf/saf/health";
 
 service  HealthCheckService {
-    rpc IsAlive(TestRequest)   returns (saf.util.Ack);
+    rpc IsAlive(TestRequest)   returns (saf.util.Empty);
 }
 
 message TestRequest{

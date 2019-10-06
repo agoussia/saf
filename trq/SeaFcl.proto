@@ -25,4 +25,6 @@ message SeaFcl {
     string container_size=7;
   int32 monthly_quantity=8;
   string commodity_type=9;
+  string description=10;
+  string remark=11;
 }

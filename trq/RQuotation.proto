@@ -28,22 +28,20 @@ import "saf/trq/SeaGc.proto";
 import "saf/trq/SeaLcl.proto";
 import "saf/trq/SeaRoro.proto";
 import "saf/util/Region.proto";
+import "saf/util/Header.proto";
 
-
-
-
-message RQuotation{       
-        string transportation_mode=1;
-        saf.trq.SeaFcl sea_fcl=2;
-        saf.trq.SeaLcl sea_lcl=3;
-        saf.trq.SeaGc sea_gc=4;
-        saf.trq.SeaBulk sea_bulk=5;
-        saf.trq.SeaRoro sea_roro=6;
-        saf.trq.AirFreight airfreight=7;
-        saf.trq.LandTruck land_truck=8;
-        saf.trq.LandRail land_rail=9;
-        saf.trq.MultiModal multimodal=10;
-        saf.trq.Domestic    domestic=11;
-        saf.util.Region region=12;
-
+message RQuotation{
+        saf.util.Header header=1;
+        string transportation_mode=2;
+        saf.trq.SeaFcl sea_fcl=3;
+        saf.trq.SeaLcl sea_lcl=4;
+        saf.trq.SeaGc sea_gc=5;
+        saf.trq.SeaBulk sea_bulk=6;
+        saf.trq.SeaRoro sea_roro=7;
+        saf.trq.AirFreight airfreight=8;
+        saf.trq.LandTruck land_truck=9;
+        saf.trq.LandRail land_rail=10;
+        saf.trq.MultiModal multimodal=11;
+        saf.trq.Domestic    domestic=12;
+        saf.util.Region region=13;
 }
