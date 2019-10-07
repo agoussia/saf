@@ -24,7 +24,7 @@ message Header {
   string receiver=4;
 
     //string engagement_id=1;
-    //bytes engagement_uid=2;
+    //bytes engagement_uid=2;re
    // bytes message_uid=3;
     //---------------------
    // string  sender_id=4;        //email
