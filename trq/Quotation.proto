@@ -14,13 +14,21 @@
 
 syntax = "proto3";
 package saf.trq;
-//import "saf/util/Money.proto";
+
+
 option go_package = "gosaf/saf/trq";
 
 
-message Quotation{       
-       
-   // saf.util.Money money=1;
-   string money=1;
+import "saf/util/Money.proto";
+import "saf/util/Header.proto";
+
+
+
+message Quotation{    
+   
+   saf.util.Header header=1;  
+   saf.util.Money money=2;
+
+  // string money=1;
         
 }

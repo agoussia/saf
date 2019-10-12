@@ -12,6 +12,7 @@ protoc  saf/util/Partner.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Partners.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Money.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Empty.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/util/Identifier.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 ## rem loads
 protoc  saf/trq/AirFreight.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/Domestic.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
@@ -30,10 +31,12 @@ protoc  saf/tcr/RegistrationResponse.proto  -I../ --go_out=plugins=grpc:$GOPATH/
 protoc  saf/tcr/RegistrationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 
 ## rem trq
-protoc  saf/trq/RQuotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/trq/Post.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/trq/PostService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+
 ## rem health
 protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 ## rem trucking

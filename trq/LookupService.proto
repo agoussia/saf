@@ -13,12 +13,15 @@
 // limitations under the License.
 syntax = "proto3";
 package saf.trq;
-import "saf/trq/RQuotation.proto";
+import "saf/trq/Post.proto";
 import "saf/util/Partners.proto";
-
+import "saf/util/Partner.proto";
+import "saf/util/Identifier.proto";
 
 option go_package = "gosaf/saf/trq";
 
 service  LookupService {
-    rpc Get(RQuotation)   returns (saf.util.Partners);
+    rpc GetPartners(Post)   returns (saf.util.Partners);
+
+    rpc GetPartner(saf.util.Identifier)   returns (saf.util.Partner);
 }

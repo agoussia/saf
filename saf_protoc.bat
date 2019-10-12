@@ -7,6 +7,7 @@ protoc  saf/util/Partner.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Gouss
 protoc  saf/util/Partners.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Money.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/util/Empty.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/util/Identifier.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 rem loads
 protoc  saf/trq/AirFreight.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
@@ -27,9 +28,10 @@ protoc  saf/tcr/RegistrationResponse.proto  -I../ --go_out=plugins=grpc:"C:\User
 protoc  saf/tcr/RegistrationService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 rem trq
-protoc  saf/trq/RQuotation.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/trq/Post.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/trq/PostService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 rem health

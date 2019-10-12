@@ -30,7 +30,7 @@ import "saf/trq/SeaRoro.proto";
 import "saf/util/Region.proto";
 import "saf/util/Header.proto";
 
-message RQuotation{
+message Post{
         saf.util.Header header=1;
         string transportation_mode=2;
         saf.trq.SeaFcl sea_fcl=3;

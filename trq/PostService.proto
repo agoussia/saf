@@ -22,14 +22,15 @@
 syntax = "proto3";
 package saf.trq;
 
-import "saf/trq/Quotation.proto";
+import "saf/trq/Post.proto";
+//import "saf/trq/Quotation.proto";
 import "saf/util/Empty.proto";
 
 
 option go_package = "gosaf/saf/trq";
 
-service  QuotationService {
-    rpc setQuotation(Quotation)   returns (saf.util.Empty);
+service  PostService {
+    rpc RequestQuotation(Post)   returns (saf.util.Empty);
 }
 
 
