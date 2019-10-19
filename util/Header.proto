@@ -21,7 +21,9 @@ message Header {
   string engagement_uid=1;
   string engagement_label=2;
   string sender=3;
-  string receiver=4;
+  string sender_name=4;
+  string receiver=5;
+  string receiver_name=6;
 
     //string engagement_id=1;
     //bytes engagement_uid=2;re

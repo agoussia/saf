@@ -28,6 +28,7 @@ message Quotation{
    
    saf.util.Header header=1;  
    saf.util.Money money=2;
+   string  terms=3;
 
   // string money=1;
         
