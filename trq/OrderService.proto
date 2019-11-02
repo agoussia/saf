@@ -11,26 +11,25 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
+//syntax = "proto3";
+//package saf.tr;
+//import "saf.tr.Load";
+//import "saf.tr.Quotation";
+//option go_package = "gosaf/saf/tr";
+//service  QuotationService {
+//    rpc GetQuotation( Load)   returns (Quotation);
+//}
 syntax = "proto3";
 package saf.trq;
+
+import "saf/trq/Order.proto";
+import "saf/util/Empty.proto";
 
 
 option go_package = "gosaf/saf/trq";
 
-
-import "saf/util/Money.proto";
-import "saf/util/Header.proto";
-
-
-
-message Quotation{    
-   
-   saf.util.Header header=1;
-   string  quotation_uid=2;
-   saf.util.Money money=3;
-   string  terms=4;
-
-  // string money=1;
-        
+service  OrderService {
+    rpc setOrder(Order)   returns (saf.util.Empty);
 }
+
+

@@ -24,12 +24,13 @@ import "saf/util/Header.proto";
 
 
 
-message Quotation{    
+message Order{    
    
    saf.util.Header header=1;
    string  quotation_uid=2;
    saf.util.Money money=3;
-   string  terms=4;
+   string  note=4;
+   
 
   // string money=1;
         
