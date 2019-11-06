@@ -30,6 +30,7 @@ message Order{
    string  quotation_uid=2;
    saf.util.Money money=3;
    string  note=4;
+   string  terms=5;
    
 
   // string money=1;

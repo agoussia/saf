@@ -31,8 +31,13 @@ rem trq
 protoc  saf/trq/Post.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/trq/Order.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+
+
+
 protoc  saf/trq/PostService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/trq/OrderService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 rem health
 protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
