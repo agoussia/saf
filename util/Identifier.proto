@@ -16,5 +16,8 @@ package saf.util;
 option go_package = "gosaf/saf/util";
 
 message Identifier {
-   string id=1;
+ 
+   string saf_id=1;
+   string query=2;
+
   }
