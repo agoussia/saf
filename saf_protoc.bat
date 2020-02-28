@@ -27,17 +27,17 @@ protoc  saf/tcr/RegistrationRequest.proto  -I../ --go_out=plugins=grpc:"C:\Users
 protoc  saf/tcr/RegistrationResponse.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 protoc  saf/tcr/RegistrationService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
-rem trq
-protoc  saf/trq/Post.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
-protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
-protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
-protoc  saf/trq/Order.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+rem booking
+protoc  saf/booking/Post.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/booking/Quotation.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/booking/Order.proto  -I../ --go_out=plugins=grpc:$"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/booking/RequesterService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+protoc  saf/booking/ProviderService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 
 
-protoc  saf/trq/PostService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
-protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
-protoc  saf/trq/OrderService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
+## rem lookup
+protoc  saf/lookup/ProviderService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"
 
 rem health
 protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:"C:\Users\Alex Goussiatiner\go\src"

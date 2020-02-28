@@ -11,21 +11,19 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 syntax = "proto3";
-package saf.trucking.load;
-import "saf/util/Header.proto";
-import "saf/util/Address.proto";
-option go_package = "gosaf/saf/trucking/load";
+package saf.registration;
 
-message RequestForTransport{       
-        saf.util.Header  header=1;
-        string type=2;  
-        string container_id=3;
-        float weight=4;
-        string cargo_desription=5;
-        saf.util.Address  from=6;
-        saf.util.Address  to=7;
-        string pickup_date=8; 
-        
+import "saf/registration/Request.proto";
+import "saf/registration/Response.proto";
+import "saf/registration/Confirmation.proto"; 
+import "saf/util/Empty.proto";
+
+option go_package = "gosaf/saf/registration";
+
+service  ProviderService {
+    rpc Create(Request)   returns (Response);
+    rpc Confirm (Confirmation) returns (saf.util.Empty) ;
+    rpc Update (Request) returns (saf.util.Empty) ;
+
 }

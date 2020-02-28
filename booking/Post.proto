@@ -13,35 +13,35 @@
 // limitations under the License.
 
 syntax = "proto3";
-package saf.trq;
+package saf.booking;
 
-option go_package = "gosaf/saf/trq";
+option go_package = "gosaf/saf/booking";
 
-import "saf/trq/AirFreight.proto";
-import "saf/trq/Domestic.proto";
-import "saf/trq/LandRail.proto";
-import "saf/trq/LandTruck.proto";
-import "saf/trq/MultiModal.proto";
-import "saf/trq/SeaBulk.proto";
-import "saf/trq/SeaFcl.proto";
-import "saf/trq/SeaGc.proto";
-import "saf/trq/SeaLcl.proto";
-import "saf/trq/SeaRoro.proto";
+import "saf/booking/AirFreight.proto";
+import "saf/booking/Domestic.proto";
+import "saf/booking/LandRail.proto";
+import "saf/booking/LandTruck.proto";
+import "saf/booking/MultiModal.proto";
+import "saf/booking/SeaBulk.proto";
+import "saf/booking/SeaFcl.proto";
+import "saf/booking/SeaGc.proto";
+import "saf/booking/SeaLcl.proto";
+import "saf/booking/SeaRoro.proto";
 import "saf/util/Region.proto";
 import "saf/util/Header.proto";
 
 message Post{
         saf.util.Header header=1;
         string transportation_mode=2;
-        saf.trq.SeaFcl sea_fcl=3;
-        saf.trq.SeaLcl sea_lcl=4;
-        saf.trq.SeaGc sea_gc=5;
-        saf.trq.SeaBulk sea_bulk=6;
-        saf.trq.SeaRoro sea_roro=7;
-        saf.trq.AirFreight airfreight=8;
-        saf.trq.LandTruck land_truck=9;
-        saf.trq.LandRail land_rail=10;
-        saf.trq.MultiModal multimodal=11;
-        saf.trq.Domestic    domestic=12;
+        saf.booking.SeaFcl sea_fcl=3;
+        saf.booking.SeaLcl sea_lcl=4;
+        saf.booking.SeaGc sea_gc=5;
+        saf.booking.SeaBulk sea_bulk=6;
+        saf.booking.SeaRoro sea_roro=7;
+        saf.booking.AirFreight airfreight=8;
+        saf.booking.LandTruck land_truck=9;
+        saf.booking.LandRail land_rail=10;
+        saf.booking.MultiModal multimodal=11;
+        saf.booking.Domestic    domestic=12;
         saf.util.Region region=13;
 }

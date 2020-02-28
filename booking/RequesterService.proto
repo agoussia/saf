@@ -11,10 +11,25 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+//syntax = "proto3";
+//package saf.tr;
+//import "saf.tr.Load";
+//import "saf.tr.Quotation";
+//option go_package = "gosaf/saf/tr";
+//service  QuotationService {
+//    rpc GetQuotation( Load)   returns (Quotation);
+//}
 syntax = "proto3";
-package saf.trq;
-option go_package = "gosaf/saf/trq";
+package saf.booking;
 
-message LandRail {
-    string container_id=1;
-  }
+import "saf/booking/Quotation.proto";
+import "saf/util/Empty.proto";
+
+
+option go_package = "gosaf/saf/booking";
+
+service  RequesterService {
+    rpc setQuotation(Quotation)   returns (saf.util.Empty);
+}
+
+

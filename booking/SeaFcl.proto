@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.trq;
-option go_package = "gosaf/saf/trq";
+package saf.booking;
+option go_package = "gosaf/saf/booking";
 
 message SeaFcl {
     string from_loc=1;

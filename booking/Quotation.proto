@@ -11,19 +11,25 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 syntax = "proto3";
-package saf.health;
+package saf.booking;
 
-import "saf/util/Empty.proto";
-//import "google/protobuf/any.proto";
 
-option go_package = "gosaf/saf/health";
+option go_package = "gosaf/saf/booking";
 
-service  HealthCheckService {
-    rpc IsAlive(TestRequest)   returns (saf.util.Empty);
-}
 
-message TestRequest{
+import "saf/util/Money.proto";
+import "saf/util/Header.proto";
 
-   string msg =1;
+
+
+message Quotation{    
+   
+   saf.util.Header header=1;
+   string  quotation_uid=2;
+   saf.util.Money money=3;
+   string  terms=4;
+
+        
 }

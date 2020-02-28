@@ -11,19 +11,27 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 syntax = "proto3";
-package saf.tcr;
-import "saf/tcr/RegistrationRequest.proto";
-import "saf/tcr/RegistrationResponse.proto";
-import "saf/tcr/RegistrationConfirmation.proto";
+package saf.booking;
 
-import "saf/util/Empty.proto";
 
-option go_package = "gosaf/saf/tcr";
+option go_package = "gosaf/saf/booking";
 
-service  RegistrationService {
-    rpc Create(RegistrationRequest)   returns (RegistrationResponse);
-    rpc Confirm (RegistrationConfirmation) returns (saf.util.Empty) ;
-    rpc Update (RegistrationRequest) returns (saf.util.Empty) ;
 
+import "saf/util/Money.proto";
+import "saf/util/Header.proto";
+
+
+
+message Order{    
+   
+   saf.util.Header header=1;
+   string  quotation_uid=2;
+   saf.util.Money money=3;
+   string  note=4;
+   string  terms=5;
+   
+
+        
 }

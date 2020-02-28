@@ -14,32 +14,31 @@ protoc  saf/util/Money.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Empty.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 protoc  saf/util/Identifier.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 ## rem loads
-protoc  saf/trq/AirFreight.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/Domestic.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/LandRail.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/LandTruck.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/MultiModal.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/SeaBulk.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/SeaFcl.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/SeaGc.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/SeaLcl.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/SeaRoro.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-## rem tcr
-protoc  saf/tcr/RegistrationConfirmation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/tcr/RegistrationRequest.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/tcr/RegistrationResponse.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/tcr/RegistrationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/AirFreight.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/Domestic.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/LandRail.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/LandTruck.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/MultiModal.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/SeaBulk.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/SeaFcl.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/SeaGc.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/SeaLcl.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/SeaRoro.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+## rem registration
+protoc  saf/registration/Confirmation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/registration/Request.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/registration/Response.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/registration/ProviderService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 
-## rem trq
-protoc  saf/trq/Post.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/LookupService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/Quotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/Order.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/PostService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/QuotationService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-protoc  saf/trq/OrderService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+## rem booking
+protoc  saf/booking/Post.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/Quotation.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/Order.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/RequesterService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/booking/ProviderService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+
+## rem lookup
+protoc  saf/lookup/ProviderService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
 
 ## rem health
-protoc  saf/health/HealthCheckService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
-## rem trucking
-protoc  saf/trucking/load/RequestForTransport.proto  -I../ --go_out=plugins=grpc:$GOPATH/src
+protoc  saf/health/ProviderService.proto  -I../ --go_out=plugins=grpc:$GOPATH/src

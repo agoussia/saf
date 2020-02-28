@@ -12,11 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.tcr;
+package saf.booking;
+option go_package = "gosaf/saf/booking";
 
-
-option go_package = "gosaf/saf/tcr";
-
-message RegistrationConfirmation {
-  string saf_id=1;
-}
+message LandRail {
+    string container_id=1;
+  }

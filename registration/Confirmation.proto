@@ -12,9 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package saf.trq;
-option go_package = "gosaf/saf/trq";
+package saf.registration;
 
-message MultiModal {
-    string container_id=1;
-  }
+
+option go_package = "gosaf/saf/registration";
+
+message Confirmation {
+  string saf_id=1;
+}

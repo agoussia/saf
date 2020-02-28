@@ -11,28 +11,10 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 syntax = "proto3";
-package saf.trq;
+package saf.booking;
+option go_package = "gosaf/saf/booking";
 
-
-option go_package = "gosaf/saf/trq";
-
-
-import "saf/util/Money.proto";
-import "saf/util/Header.proto";
-
-
-
-message Order{    
-   
-   saf.util.Header header=1;
-   string  quotation_uid=2;
-   saf.util.Money money=3;
-   string  note=4;
-   string  terms=5;
-   
-
-  // string money=1;
-        
-}
+message AirFreight {
+    string container_id=1;
+  }
